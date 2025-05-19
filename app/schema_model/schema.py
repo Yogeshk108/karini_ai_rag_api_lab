@@ -8,4 +8,4 @@ class RequestModel(BaseModel):
     A pydantic model to validate input request body
     """
     query: str = Field(..., min_length=1)
-    top_k: Optional[int] = Field(2, ge=0)
+    top_k: Optional[int] = Field(2, ge=0, lt=1000)

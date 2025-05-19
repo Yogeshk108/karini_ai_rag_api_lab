@@ -31,6 +31,7 @@ uvicorn app.main:rag_app --port 5001
 ```
 - To Test the API open swagger documentation on any browser using following url
   - http://localhost:5001/docs
+  - You can pass query string like 'kafka', 'fastapi', 'AWS' and top_k as any number between 0 to 1000
 - To open API redoc documentation on any browser using following url
   - http://localhost:5001/redoc
 - To run unit test run following command
